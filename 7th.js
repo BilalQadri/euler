@@ -1,4 +1,14 @@
 
+function nth_prime (n) {
+ 
+  var total = n * 11;
+  var range = [];
+  
+  range = prime_range(total);
+  return range[n-2];
+  
+}
+
 function prime_range(limit) {
   
   var odd_range = range(1, limit, 2).filter(v => (v % 2) === 1);
